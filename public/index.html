@@ -12,10 +12,9 @@
         background-image: linear-gradient(180deg, #202225 0%,#36393f 50%, #4f545c 100%);
     }
     @-webkit-keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-         }
-         
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }    
     @keyframes fadeIn {
         0% {opacity: 0;}
         100% {opacity: 1;}
@@ -94,22 +93,9 @@
          </section>
      </div>
      <div class="text-center text-gray-400 text-m font-bold">
-            <p id="login">¿No tienes una cuenta? <a id="loginLink" href="#" class="underline hover:text-green-500 transition duration-500" onclick="toggleCard(this.id)">¡Registrate!</a></p>
+            <p id="login">¿No tienes una cuenta? <a id="loginLink" href="#" class="underline hover:text-green-500 transition duration-500">¡Registrate!</a></p>
 
-            <p id="register">¿Tienes una cuenta? <a id="registerLink" href="#" class="underline hover:text-green-500 transition duration-500" onclick="toggleCard(this.id)">¡Inicia sesión!</a></p>
-            <script type="text/javascript">
-                function toggleCard(id)
-                {
-                    if("registerLink" === id){
-                        document.getElementById(id.split("Link")).visibility = 'hidden';
-                        document.getElementById("loginLink").visibility = 'visible';
-                    }else{
-                        document.getElementById(id).visibility = 'visible';
-                        document.getElementById("registerLink").visibility = 'hidden';
-                        
-                    }
-                }
-            </script>
+            <!---<p id="register">¿Tienes una cuenta? <a id="registerLink" href="#" class="underline hover:text-green-500 transition duration-500" onclick="toggleCard(this.id)">¡Inicia sesión!</a></p>--->
       </div>
      </main>
 
